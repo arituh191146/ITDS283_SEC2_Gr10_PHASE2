@@ -89,6 +89,14 @@ flutter:
       - assets/mitsubishi.png
       - assets/mazda.png
       - assets/subaru.png
+      - assets/new-honda-jass.png
+      - assets/Hondacity2014.png
+      - assets/Hondacity2013.png
+      - assets/hondacivic2022.png
+      - assets/hondabio.png
+      - assets/hondacivic--.png
+      - assets/honda12.png
+      - assets/honda13.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -73,7 +73,7 @@ class _ViewDetailCarState extends State<ViewDetailCar> {
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [Colors.blue, Colors.lightBlueAccent],
+                    colors: [Colors.white, Colors.lightBlueAccent],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                   ),

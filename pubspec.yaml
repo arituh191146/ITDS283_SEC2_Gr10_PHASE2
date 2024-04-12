@@ -97,6 +97,9 @@ flutter:
       - assets/hondacivic--.png
       - assets/honda12.png
       - assets/honda13.png
+      - assets/123.png
+      - assets/456.png
+      - assets/789.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

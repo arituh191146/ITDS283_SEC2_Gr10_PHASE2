@@ -27,15 +27,11 @@ class MyApp extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                   Image.asset(
-                          'assets/mastercard_logo.png', // ตั้งค่า path ของรูปรถ
-                          height: 300, // ปรับขนาดรูปรถตามต้องการ
-                          width: 300,
-                        ),
-                  // Image.asset('assets/mastercard2.png'),
-                  // height: 100, // ปรับขนาดรูปรถตามต้องการ
-                  //         width: 100,
-                   // Replace with your MasterCard logo image
+                  Image.asset(
+                    'assets/mastercard_logo.png', // ตั้งค่า path ของรูปรถ
+                    height: 300, // ปรับขนาดรูปรถตามต้องการ
+                    width: 300,
+                  ),
                   SizedBox(height: 32),
                   MasterCardForm(),
                 ],
@@ -136,6 +132,9 @@ class _MasterCardFormState extends State<MasterCardForm> {
           ),
           SizedBox(height: 16),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              shadowColor: Colors.blueAccent, // set the background color
+            ),
             onPressed: () {
               if (_formKey.currentState?.validate() ?? false) {
                 ScaffoldMessenger.of(context)

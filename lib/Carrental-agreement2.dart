@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp1());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('Carrental-agreement PAGE2')), // ใช้ Center widget รอบ Text widget
+          title: Center(child: Text('Car Rental Agreement PAGE2')), // ใช้ Center widget รอบ Text widget
           backgroundColor: Colors.white,
         ),
         body: Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Carrental-agreement2.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,10 +9,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // บรรทัดนี้จะปิด DEBUG มุมซ้ายบน
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('Carrental-agreement PAGE1')), // ใช้ Center widget รอบ Text widget
+          title: Center(child: Text('Car Rental Agreement PAGE1')), // ใช้ Center widget รอบ Text widget
           backgroundColor: Colors.white,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context); // เมื่อกดปุ่มนี้จะทำการย้อนกลับไปหน้าที่แล้ว
+            },
+          ),
         ),
         body: Container(
           decoration: BoxDecoration(
@@ -42,8 +50,11 @@ class MyApp extends StatelessWidget {
                     SizedBox(height: 20), // เพิ่มระยะห่างระหว่างรูปภาพกับปุ่ม
                     ElevatedButton(
                       onPressed: () {
-                        // การทำงานเมื่อปุ่มถูกกด
-                        print('Next button pressed');
+                        // เชื่อมหน้าไปยังหน้าต่อไป
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyApp1()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                        );
                       },
                       child: Text('Next'),
                     ),

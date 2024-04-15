@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'loginmain.dart';
 
 class LogoutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
+        
         title: Text('Logout'),
       ),
       body: Center(
@@ -50,10 +53,16 @@ class LogoutPage extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp10()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
                         // Handle Yes button action
                         Navigator.pop(context, true); // Return true when 'Yes' is selected
                       },
+                      
                       child: Text('Yes'),
+                      
                     ),
                   ],
                 ),

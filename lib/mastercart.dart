@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'information.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp4());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // ลบปุ่ม debug มุมขวาบน
       title: 'MasterCard',
       home: Scaffold(
         appBar: AppBar(
@@ -105,6 +107,10 @@ class _MasterCardFormState extends State<MasterCardForm> {
                     return null;
                   },
                   onChanged: (value) {
+                     Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp5()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
                     setState(() {
                       creditCardExpirationDate = value;
                     });

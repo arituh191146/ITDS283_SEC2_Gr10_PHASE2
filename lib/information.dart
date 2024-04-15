@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'Finish-For-Rent-Car.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp5());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // ลบปุ่ม debug มุมขวาบน
       title: 'Car Delivery App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -99,6 +101,10 @@ class MyHomePage extends StatelessWidget {
                     SizedBox(height: 16.0),
                     ElevatedButton(
                       onPressed: () {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp6()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
                         // Add your code here to handle the submit button press
                       },
                       child: Text('Submit'),

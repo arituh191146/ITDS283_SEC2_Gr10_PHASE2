@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'Carrental-agreement2.dart';
+import 'selectbrandcar.dart';
 void main() {
-  runApp(MyApp());
+  runApp(MyApp10());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // ลบปุ่ม debug มุมขวาบน
       title: 'Car Rent ICT Mahidol',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -37,7 +38,9 @@ class LoginMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
+        
         title: Text('Login Page'),
       ),
       body: Center(
@@ -45,7 +48,7 @@ class LoginMain extends StatelessWidget {
           onPressed: () {
            Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => MyApp1()),
+      MaterialPageRoute(builder: (context) => LoginMain()),
     );
           },
           child: Text('Go to Select Brand Car'),
@@ -178,6 +181,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(height: 8),
                       TextButton(
                         onPressed: () {
+                           Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SelectBrandCar()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
                           // Handle sign-up logic here
                         },
                         style: TextButton.styleFrom(

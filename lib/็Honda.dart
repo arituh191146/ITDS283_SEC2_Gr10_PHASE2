@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Carrental-agreement1.dart';
 
 void main() {
   runApp(MyForm());
@@ -17,6 +18,7 @@ class MyFormState extends State<MyForm> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // ลบปุ่ม debug มุมขวาบน
       home: Scaffold(
         appBar: AppBar(
           title: Text(''),
@@ -195,15 +197,38 @@ class MyFormState extends State<MyForm> {
                     Container(
                       margin: EdgeInsets.only(bottom: 20),
                       child: TextFormField(
+                        obscureText: true, // เพิ่มคำสั่งสำหรับซ่อน password
                         decoration: InputDecoration(
                           labelText: 'Password',
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                         ),
-                        // วงเล็บปิดที่นี่
-                        // ช่วยเเก้ไขวงเล็บใน code นี่ให้หน่อยพร้อมส่งโค้ดที่เเก้ไขเเล้วมาให้ทั้งหมดหน่อย
+                        validator: (value) {
+                          if (value == null || value.isEmpty) {
+                            return 'Please enter your password';
+                          }
+                          return null;
+                        },
                       ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton( // เพิ่ม ElevatedButton เป็นปุ่ม Submit
+                      onPressed: () {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp8()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
+                        // Validate returns true if the form is valid, or false otherwise.
+                        if (_formKey.currentState!.validate()) {
+                          // If the form is valid, display a snackbar. In the real world,
+                          // you'd often call a server or save the information in a database.
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(content: Text('Processing Data')),
+                          );
+                        }
+                      },
+                      child: Text('Submit'),
                     ),
                   ],
                 ),

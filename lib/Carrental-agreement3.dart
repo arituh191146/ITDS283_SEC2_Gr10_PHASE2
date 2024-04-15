@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'choose-you-payment.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp2());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // ลบปุ่ม debug มุมขวาบน
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('Car Rental Agreement PAGE2')), // ใช้ Center widget รอบ Text widget
+          title: Center(child: Text('Car Rental Agreement PAGE3')), // ใช้ Center widget รอบ Text widget
           backgroundColor: Colors.white,
         ),
         body: Container(
@@ -43,7 +45,11 @@ class MyApp extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {
                         // การทำงานเมื่อปุ่มถูกกด
-                        print('Next button pressed');
+                         Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp3()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
+                        print('Submit button pressed');
                       },
                       child: Text('Submit'),
                     ),

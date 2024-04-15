@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'log-out.dart'; // Adjusted file name and class name for consistency
 
-void main() {
-  runApp(MyApp());
+void main6() {
+  runApp(MyApp6());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: MainScreen(), // Use MainScreen as the starting point
+      debugShowCheckedModeBanner: false, // ลบปุ่ม debug มุมขวาบน
     );
   }
 }

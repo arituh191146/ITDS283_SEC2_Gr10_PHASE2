@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'Carrental-agreement1.dart';
 
 void main() {
-  runApp(MyForm());
+  runApp(MyForm15());
 }
 
-class MyForm extends StatefulWidget {
+class MyForm15 extends StatefulWidget {
   @override
   MyFormState createState() {
     return MyFormState();
   }
 }
 
-class MyFormState extends State<MyForm> {
+class MyFormState extends State<MyForm15> {
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -217,7 +217,7 @@ class MyFormState extends State<MyForm> {
                       onPressed: () {
                         Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MyApp8()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                        MaterialPageRoute(builder: (context) => MyApp99()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
                       );
                         // Validate returns true if the form is valid, or false otherwise.
                         if (_formKey.currentState!.validate()) {

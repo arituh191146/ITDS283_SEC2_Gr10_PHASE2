@@ -63,6 +63,8 @@ class LogoutPage extends StatelessWidget {
                       
                       child: Text('Yes'),
                       
+                      
+                      
                     ),
                   ],
                 ),

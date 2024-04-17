@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'car_rental_agreement_page2.dart'; // Adjusted file name for consistency
 
 void main() {
-  runApp(MyApp8());
+  runApp(MyApp99());
 }
 
-class MyApp8 extends StatelessWidget {
+class MyApp99 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

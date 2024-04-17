@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Select-generation-car.dart';
 
 void main() {
   runApp(MyApp());
@@ -92,7 +93,13 @@ class SelectBrandCar extends StatelessWidget {
                   PaymentOption(
                     image: 'assets/honda.png',
                     label: 'Honda',
-                    onPressed: () => _onPressed(context, 'Honda'),
+                    onPressed: () {
+                      // เชื่อมหน้าไปยังหน้าต่อไป
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyApp25()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                      );
+                    },
                   ),
                 ],
               ),

@@ -28,7 +28,7 @@ class MainScreen extends StatelessWidget {
         // แก้ไขส่วนนี้
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blue, Colors.lightBlueAccent],
+             colors: [const Color.fromRGBO(0, 11, 50, 1.0), const Color.fromRGBO(0, 11, 50, 1.0)], // เปลี่ยนสี Gradient ตรงนี้
           ),
         ),
         // ส่วนที่เหลือเหมือนเดิม
@@ -102,3 +102,4 @@ class MainScreen extends StatelessWidget {
     );
   }
 }
+//1

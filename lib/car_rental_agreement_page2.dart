@@ -12,9 +12,7 @@ class CarRentalAgreementPage2 extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blue, Colors.lightBlueAccent],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+            colors: [const Color.fromARGB(255, 5, 34, 85), const Color.fromARGB(255, 5, 34, 85)], // เปลี่ยนสี Gradient
           ),
         ),
         child: Center(
@@ -57,3 +55,4 @@ class CarRentalAgreementPage2 extends StatelessWidget {
     );
   }
 }
+//1

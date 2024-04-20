@@ -21,12 +21,12 @@ class SelectBrandCar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Select Brand Car Page'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Select Brand Car Page'),
+      // ),
       body: SingleChildScrollView(
         child: Container(
-          color: Colors.blue,
+          color: Color.fromARGB(255, 5, 34, 85),
           padding: EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -227,3 +227,4 @@ class PaymentOption extends StatelessWidget {
     );
   }
 }
+//1

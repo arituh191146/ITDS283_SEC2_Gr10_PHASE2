@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'loginmain.dart';
-import 'selectbrandcar.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,8 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/login', // กำหนด initialRoute เป็นหน้า login
       routes: {
-        '/login': (context) => LoginMain(), // กำหนด route สำหรับหน้า login
-        '/selectBrandCar': (context) => SelectBrandCar(), // กำหนด route สำหรับหน้า selectBrandCar
+        // '/login': (context) => LoginMain(), // กำหนด route สำหรับหน้า login
+        // '/selectBrandCar': (context) => SelectBrandCar(), // กำหนด route สำหรับหน้า selectBrandCar
       },
     );
   }
@@ -114,3 +113,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+//1

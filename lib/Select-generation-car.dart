@@ -125,8 +125,7 @@ class GenerationCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blue, Colors.lightBlueAccent],
-            begin: Alignment.topCenter,
+            colors: [const Color.fromARGB(255, 5, 34, 85), const Color.fromARGB(255, 5, 34, 85)], // เปลี่ยนสี Gradient
             end: Alignment.bottomCenter,
           ),
           borderRadius: BorderRadius.circular(10),
@@ -171,3 +170,4 @@ class GenerationCard extends StatelessWidget {
     );
   }
 }
+//1

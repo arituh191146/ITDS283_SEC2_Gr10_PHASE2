@@ -18,8 +18,7 @@ class MyApp2 extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.blue, Colors.lightBlueAccent],
-              begin: Alignment.topCenter,
+              colors: [const Color.fromARGB(255, 5, 34, 85), const Color.fromARGB(255, 5, 34, 85)], // เปลี่ยนสี Gradient
               end: Alignment.bottomCenter,
             ),
           ),
@@ -63,3 +62,4 @@ class MyApp2 extends StatelessWidget {
     );
   }
 }
+//1

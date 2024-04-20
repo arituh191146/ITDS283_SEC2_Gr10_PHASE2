@@ -16,7 +16,7 @@ class LogoutPage extends StatelessWidget {
           height: 200,
           padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: const Color.fromARGB(255, 15, 44, 67),
             borderRadius: BorderRadius.circular(10),
             boxShadow: [
               BoxShadow(
@@ -28,7 +28,7 @@ class LogoutPage extends StatelessWidget {
           ),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 15, 44, 67),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Column(
@@ -38,7 +38,7 @@ class LogoutPage extends StatelessWidget {
                   'Do you want to log out?',
                   style: TextStyle(
                     fontSize: 18,
-                    color: Colors.black,
+                    color: const Color.fromARGB(255, 247, 246, 246),
                   ),
                 ),
                 Row(
@@ -49,19 +49,21 @@ class LogoutPage extends StatelessWidget {
                         // Handle No button action
                         Navigator.pop(context, false); // Return false when 'No' is selected
                       },
-                      child: Text('No'),
+                      child: Text('Yes'),
                     ),
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MyApp10()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
+                        MaterialPageRoute(builder: (context) => MyApp12()), // ใส่ Widget หน้าที่ต้องการเชื่อมไป
                       );
                         // Handle Yes button action
                         Navigator.pop(context, true); // Return true when 'Yes' is selected
                       },
                       
-                      child: Text('Yes'),
+                      child: Text('No'),
+                      
+                      
                       
                       
                       
@@ -76,3 +78,4 @@ class LogoutPage extends StatelessWidget {
     );
   }
 }
+//1

@@ -15,7 +15,7 @@ class MyApp3 extends StatelessWidget {
           title: Text('Choose Payment Method'),
         ),
         body: Container(
-          color: Colors.blue,
+          color: const Color.fromARGB(255, 5, 34, 85),
           padding: EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -134,3 +134,4 @@ class PaymentOption extends StatelessWidget {
     );
   }
 }
+//1

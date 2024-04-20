@@ -29,7 +29,7 @@ class MyFormState extends State<MyForm15> {
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [Colors.blue, Colors.lightBlueAccent],
+              colors: [const Color.fromARGB(255, 5, 34, 85), const Color.fromARGB(255, 5, 34, 85)], // เปลี่ยนสี Gradient
             ),
           ),
           child: Form(
@@ -240,3 +240,4 @@ class MyFormState extends State<MyForm15> {
     );
   }
 }
+//1
